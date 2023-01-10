@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tarihi ve Gezilecek Yerler</title>
+    <link rel="stylesheet" href="/animations/menu.css">
+    <link rel="stylesheet" href="/animations/main_screen.css">
+    <link rel="stylesheet" href="/animations/place_to_visit.css">
+    <link rel="stylesheet" href="/animations/extensions.css">
+    <link rel="stylesheet" href="/animations/dark_mode_toggler.css">
+    <script src="/scripts/script.js"></script>
+    
+</head>
+
+<body onload="onLoad()">
+    <header>
+        <div class="sizedBox">
+            <p class="baslik">Antalya'da Tarihi Ve Gezilecek Yerler</p>
+            <div class="iconBox"><img src="/pictures/main/1000_F_181236526_NtrvsyLAgnM6qPqvV79bLIxwZYBX75ML.jpg"
+                    width="175"></div>
+        </div>
+    </header>
+    <label class="label">
+        <div class="toggle">
+            <input onclick="darkMode()" class="toggle-state" type="checkbox" name="check" value="check" />
+            <div class="indicator"></div>
+        </div>
+    </label>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn">≡</label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="/main_page.html" onclick="timerStop()">Anasayfa</a></li>
+            <li><a href="/screens/history.html" onclick="timerStop()">Tarihçe</a></li>
+            <li><a href="/screens/place_to_visit.html" onclick="timerStop()">Tarihi ve Gezilecek Yerler</a></li>
+            <li><a href="/screens/accommodation.html" onclick="timerStop()">Konaklama Yerleri</a></li>
+            <li><a href="/screens/districts.html" onclick="timerStop()">İlçeler</a></li>
+            <li><a href="/screens/traditional_foods.html" onclick="timerStop()">Şehre Özgü Yiyecekler</a></li>
+            <li><a href="/screens/contact.html" onclick="timerStop()">İletişim</a></li>
+            <li><a href="/screens/test.html" onclick="timerStop()">Test</a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div style="float: left;">
+        <img src="/pictures/visit/antalya_saat_kulesi.jpg" alt="" width="250"
+            style="float: left; margin-top: 5px ;margin-right:6px; margin-bottom:5px;">
+        <br><br><br><br><br><br>
+        <h2 class="header2"> Antalya Saat kulesi</h2>
+        <br>
+        <p class="paragraph"> Antalya merkezindeki tarihi simgelerden ve halkın buluşma noktalarından biri olan Antalya
+            Saat
+            Kulesi, Kale Kapısı mevkiinde tarihi Kaleiçi’nin hemen girişinde yer alıyor. 1901 yılında padişah II.
+            Abdülhamid
+            için inşa ettirilen Antalya Saat Kulesi, 14 metre yüksekliği ve kare planlı mimarisiyle hemen dikkat
+            çekiyor.
+            Dört tarafında saatlerin bulunduğu Antalya Saat Kulesi, bozulmadan kalmış mimarisiyle görülmeye değer
+            güzellikte. Çevresi alışveriş çarşıları, mağazalar, restoranlar ve nostaljik tramvay ile oldukça hareketli
+            olan
+            Antalya Saat Kulesi’nin önünde fotoğraf çektirmeyi unutmayın.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/antalya_surlar.jpg" alt="" width="250"
+            style="float: right; margin-top: 5px ;margin-right:6px; margin-bottom:5px; margin-left: 5px;">
+
+        <br><br><br>
+        <h2 class="header2"> Alanya Kalesi</h2>
+        <br>
+        <p class="paragraph">Antalya’nın en popüler turistik ilçesi Alanya'nın simgesi olan görkemli Alanya Kalesi,
+            Akdeniz’e hakim bir tepede bütün ihtişamıyla yükseliyor. Deniz seviyesinden 250 yükseklikteki bir
+            yarımadanın zirvesine inşa edilmiş kale, 10 hektar gibi geniş bir alanı kapsıyor. 6,5 kilometre toplam
+            uzunluğa sahip surlarıyla büyüleyici bir manzara sunan Alanya Kalesi, 13. yüzyılda Selçuklu Sultanı I.
+            Alaeddin Keykubad tarafından inşa ettirilmiş bir mimari şaheser. Denizden gelecek saldırılara karşı
+            Akdeniz’e hakim bir noktaya inşa edilen kale, Bizans ve Osmanlı dönemlerinde de kullanılmış, ayrıca uzun bir
+            süre korsanların işgalinde kalmış.
+            <br><br>
+            83 kulesi, 140 burcu ve günümüze kadar bozulmadan kalmayı başarmış kilometrelerce uzanan surlarıyla yerli ve
+            yabancı turistlerin en çok ziyaret ettiği yerlerden biri olan Alanya Kalesi’nin iç bölümü ise Tophane, saray
+            kompleksi, Süleymaniye Camii, çeşitli bedestenler ve tarihi Osmanlı evleri ile tam bir açık hava müzesi.
+            Çevresinde butik otellerin ve restoranların da bulunduğu Alanya Kalesi'nin surlarından gün batımında hem
+            Akdeniz’in hem de Alanya plajlarının muhteşem fotoğrafları çekebilirsiniz.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/antalya-hadrian-uckapilar.jpg" alt="" width="250"
+            style="float: left; margin-top: 5px ;margin-right:6px; margin-bottom:5px;">
+        <br><br><br><br><br>
+        <h2 class="header2">Hadrianus Kapısı (Üçkapılar)</h2>
+        <br>
+        <p class="paragraph">
+            Antalya'nın tarihi kent bölgesini çevreleyen surların antik kapısı olan Hadrianus Kapısı, Antalya'nın tam
+            ortasında yer alıyor ve Kaleiçi'ne bir giriş kapısı görevi görüyor. Halk arasında Mermer Kapı olarak da
+            bilinen ve M.Ö. 130 yılında Roma İmparatorluğu tarafından yaptırılan 3 gözlü Hadrianus Kapısı, Korint
+            tarzında devasa mermer sütunlarla inşa edilen etkileyici bir tarihi eser ve Antalya merkezindeki en çok
+            ziyaret edilen yerlerinden biri.
+            <br><br>
+            İmparator ve ailesinin kabarmaları, kitabesi ve günümüze kadar sağlam kalmış mermer sütunlarıyla Antalya’nın
+            en çok fotoğraflanan yerlerinden biri olan Hadrianus Kapısı’nın çevresinde ise kafeler, restoranlar ve
+            onlarca mağaza hizmet veriyor. Antalya kartpostallarını süsleyen Hadrianus Kapısı, Atatürk Caddesi
+            üzerindeki merkezi konumundan dolayı şehri gezerken mutlaka karşınıza çıkacak. Antik kapının fotoğraflarını
+            çektikten sonra kapıdan geçerek Kaleiçi'nin tarihi sokaklarını da keşfe çıkabilirsiniz.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/aspendos-antalya.jpg" alt="" width="250"
+            style="float: right; margin-top: 5px ;margin-right:6px; margin-bottom:5px; margin-left: 5px;">
+        <br><br><br><br><br>
+        <h2 class="header2"> Aspendos Antik Kenti</h2>
+        <br>
+        <p class="paragraph">Antalya tarih ve kültür gezilerinin en önemli adreslerinden biri olan Aspendos Antik Kenti,
+            Antalya merkezine sadece 46 kilometre uzaklıkta. M.Ö. 10. yüzyılda inşa edilmiş ve günümüze kadar özenle
+            korunmuş antik kenti gezerken Roma dönemi mimarisinin en güzel örneklerine şahit olacaksınız. Yaz aylarında
+            klasik müzik festivalleri ve sanatsal etkinliklere sahne olan 20.000 kişilik Antik Aspendos Tiyatrosu’yla
+            ünlü antik kent, iki tepe üzerine bölgeye hakim bir konumda inşa edilmiş. Döneminin en zengin kenti olan
+            Aspendos Antik Kenti’nde tarihi Roma hamamları, agoralar, su kemerleri, akropol ve tapınaklar arasında
+            tarihte bir yolculuğa çıkabilirsiniz.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/damlatas-magarasi.jpg" alt="" width="250"
+            style="float: left; margin-top: 5px ;margin-right:6px; margin-bottom:5px;">
+        <br><br><br><br><br>
+        <h2 class="header2"> Damlataş Mağarası</h2>
+        <br>
+        <p class="paragraph">1948 yılında taş ocağı açılırken kazara keşfedilen Damlataş Mağarası, hem Antalya'nın hem
+            de Alanya'nın en önemli turistik değerlerinden biri haline geldi. Türkiye'nin turizme açılan ilk mağarası
+            olmasıyla ünlü Damlataş Mağarası, Akdeniz'in sevilen plajlarından biri olan Damlataş Plajı'nın arka
+            tarafında Alanya Kalesi'nin batı bölümünde yer alıyor.
+            <br><br>
+            50 metre uzunluğunda bir geçitle iç bölümlere bağlanan ve iyi bir şekilde aydınlatılan yürüyüş yollarıyla
+            keşfe çıkabileceğiniz mağaranın nemli ve temiz havası ise astım gibi solunum yolu rahatsızlıklarına iyi
+            geliyor. Astım hastaları 21 gün boyunca günde 4 saat mağarayı ziyaret ederek şifa buluyorlar ve bu amaçla
+            binlerce kişi her yıl Damlataş Mağarası’nı ziyaret ediyor. 15.000 yılda oluşmuş büyüleyici sütunlar,
+            sarkıtlar ve dikitler ile süslü Damlataş Mağarası’nı gezdikten sonra mavi Bayraklı Damlataş Plajı’nın
+            masmavi sularına kendinizi bırakarak yorgunluk atabilirsiniz.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/kaleici.jpg" alt="" width="250"
+            style="float: right; margin-top: 5px ;margin-right:6px; margin-bottom:5px; margin-left: 5px;">
+        <br><br><br><br><br>
+        <h2 class="header2"> Kaleiçi</h2>
+        <br>
+        <p class="paragraph">Antalya'nın tam ortasında Muratpaşa ilçe sınırlarında yer alan Kaleiçi (Old Town); Arnavut
+            kaldırımlı dar sokakları, ahşap ve taş mimarili tarihi Osmanlı konakları, Akdeniz koylarına tekne turlarının
+            düzenlendiği küçük yat limanı, onlarca çeşit eğlence mekanı, hediyelik eşya dükkanları ve butik otelleriyle
+            Antalya şehir merkezindeki en popüler turistik yer konumunda.
+            <br><br>
+            Yivli Minare, Hıdırlık Kulesi, Kesik Minare, Karatay Medresesi ve Şehzade Korkut Camii gibi pek çok tarihi
+            hazineye de ev sahipliği yapan Antalya Kaleiçi’nin tarihi konaklarının restore edilmesi ile hizmete başlayan
+            şık butik oteller ve pansiyonlar, her mevsim turistlerle dolu.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/kaleiciliman.jpg" alt="" width="250"
+            style="float: left; margin-top: 5px ;margin-right:6px; margin-bottom:5px;">
+        <br><br><br><br><br><br><br>
+        <h2 class="header2"> Kaleiçi Liman</h2>
+        <br>
+        <p class="paragraph">Antalya’nın tarihi semti Kaleiçi’nde yer alan ve çevresi yüzlerce yıllık surlarla çevrili
+            Kaleiçi Marina, hem Antalya’nın en sevilen gezi alanlarından biri hem de Kemer, Adrasan, Tekirova, Kaş ve
+            Kalkan tekne turlarının çıkış noktası. Bir tarafında Antalya falezleri, diğer tarafında küçük Mermerli
+            Plajı’nın bulunduğu Kaleiçi Marina; renkli balıkçı kayıklarının sıralandığı yürüyüş yolu, balıkçı
+            restoranları, kafeler, barlar, konserlerin düzenlendiği küçük tiyatrosu, seyir terasları ve deniz
+            kenarındaki etkileyici kayalık oturma alanları ile Antalya merkezinde ilk uğramanız gereken yerler arasında.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/karain-magarasi.jpeg" alt="" width="250"
+            style="float: right; margin-top: 5px ;margin-right:6px; margin-bottom:5px; margin-left: 5px;">
+        <br><br><br><br><br>
+        <h2 class="header2"> Karain Mağarası</h2>
+        <br>
+        <p class="paragraph">Türkiye'nin en büyük doğal mağaralarından biri Antalya'da yer alıyor. Şehir merkezine 30
+            kilometre uzaklıkta, Antalya-Burdur Yolu üzerinde bulunan devasa Karain Mağarası, milyonlarca yıl önce doğal
+            yollarla oluşmuş ve ilk çağlardan beri yerleşim yeri olarak kullanılmış bir tabiat harikası. Arkeolojik
+            çalışmaların yapıldığı mağarada etkileyici mağara resimleri ve ilk çağlara kadar uzanan kişisel eşyalar
+            bulundu. UNESCO Dünya Miras Listesi'ne alınması için öneride bulunulan Karain Mağarası’nı iyi düzenlenmiş
+            yürüyüş yollarıyla keşfe çıkabilir, milyonlarca yılda oluşmuş devasa sarkıtlar, dikitler ve göletler
+            arasında gezebilir; mağara duvarlarına kabartma yöntemi ile kazanmış Roma yazıtları ve binlerce yıllık yaşam
+            odalarını inceleyebilirsiniz.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/karaoglanparki.jpg" alt="" width="250"
+            style="float: left; margin-top: 5px ;margin-right:6px; margin-bottom:5px;">
+        <br><br><br><br><br><br><br>
+        <h2 class="header2"> Karaalioğlu Parkı </h2>
+        <br>
+        <p class="paragraph">Akdeniz'in ünlü falezleri üzerinde, Akdeniz’e hakim bir konumda yer alan Karaalioğlu Parkı,
+            140.000 metrekarelik yeşil alanıyla Türkiye'nin en büyük şehir parklarından biri. Doğu-batı yönünde denize
+            paralel olarak ilerleyen yürüyüş yolları, kafeler, çay bahçelerinin yanı sıra hem Konyaaltı sahili hem de
+            Beydağları’nın panoramik manzaralarını izleyebileceğiniz seyir teraslarıyla çok sevilen bir gezi alanı olan
+            Karaalioğlu Parkı, Antalya’nın bitki çeşidinin yansıtan onlarca peyzajlı bahçeye de sahip.
+            <br>
+            Asya ve Afrika'dan getirilen yeşil papağanlar dahil 50’den fazla farklı türüne ev sahipliği yapan park,
+            1940'lı yıllarda inşa edildi ve Türkiye'nin en eski şehir parklarından biri konumunda. Akşam yürüyüşlerine
+            çıkmak ve Antalya’nın en güzel fotoğraflarını çekmek için Kaleiçi’nin hemen yanındaki Karaalioğlu Parkı’na
+            uğrayabilirsiniz.
+            <br><br>
+            Not: Antalya ağzında Karaoğlan olarak duyabilirsiniz.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/konyaalti-plaji.jpeg" alt="" width="250"
+            style="float: right; margin-top: 5px ;margin-right:6px; margin-bottom:5px; margin-left: 5px;">
+        <br><br><br><br><br>
+        <h2 class="header2"> Konyaaltı Plajı</h2>
+        <br>
+        <p class="paragraph">Antalya merkezinde yer aldığı için kolayca ulaşabileceğiniz Konyaaltı Plajı, Konyaaltı
+            varyantları ile Antalya Limanı arasında uzanan 7 kilometrelik büyüleyici bir plaj. İnce çakıllı 3 metre
+            genişliğinde bir sahili olan mavi bayraklı Konyaaltı Plajı’nın çevresinde şezlong ve güneş şemsiyesi
+            kiralayabileceğiniz plaj kulüpleri, yürüyüş ve bisiklet yolları, onlarca kaliteli restoran, kafe ve otel
+            sıralanıyor.
+            <br><br>
+            Oldukça tuzlu ve sıcak bir suya sahip olan Konyaaltı Plajı, çabuk derinleştiği için çocuklu ailelerin bu
+            plajda dikkatli olması gerekiyor, ayrıca plajda gün boyu cankurtaranlar hizmet veriyor. Bahar aylarında
+            dağlarındaki kar manzaraları eşliğinde keyifle yüzebileceğiniz Konyaaltı Plajı, ülkemizin en bilinen
+            plajlarından biri ve ücretli ücretsiz alanlara sahip. Gün boyu kano, deniz bisikleti ve uçurtma sörfü gibi
+            pek çok su sporu yaparak eğlenebileceğiniz plajın üzerinde yamaç paraşütü yaparak da büyüleyici manzarayı
+            kuş bakışı izleyebilirsiniz. Konyaaltı Plajı'na toplu taşıma araçlarıyla, kısa bir yürüyüşle veya taksiyle
+            5-10 dakika içinde ulaşmanız mümkün.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/koprulu-kanyon.jpeg" alt="" width="250"
+            style="float: left; margin-top: 5px ;margin-right:6px; margin-bottom:5px;">
+        <br><br><br><br><br>
+        <h2 class="header2"> Köprülü Kanyon </h2>
+        <br>
+        <p class="paragraph">Antalya'da rafting, doğa yürüyüşü, kamp ve kaya tırmanma gibi doğa sporları yapmak için
+            mutlaka gitmeniz gereken yerlerden olan Köprülü Kanyon, şehir merkezine 85 kilometre uzaklıktaki Köprülü
+            Kanyon Milli Parkı içerisinde yer alıyor. 14 kilometre uzunluğuyla Türkiye'nin en uzun kanyonlarından olan
+            Köprülü Kanyon, yüksekliği 100 metreyi bulan sarp kaya duvarları ve etkileyici dar geçitleriyle tüm dünyadan
+            doğa spor sevenlerin ilgisini çekiyor.
+            <br><br>
+            Aynı anda binlerce kişinin rafting yapabildiğine tanıklık edeceğiniz Köprülü Kanyon'da profesyonel bir
+            sporcu olmasanız bile hocalar eşliğinde bu eğlenceyi deneyimleme şansınız var.
+            <br><br>
+            El değmemiş bakir doğasından dolayı 1973 yılında milli park ilan edilen Köprülü Kanyon, toplamda 366.000
+            dekar gibi büyük bir yeşil alanı kapsıyor. Kanyon gezinizde etkileyici Roma kemerleri, tarihi köprüler,
+            kaleler ve antik kentler arasında unutulmaz bir yolculuk yapabilirsiniz. Yaz sıcaklarında kaya göletlerinde
+            buz gibi sularda da serinleyebileceğiniz Köprülü Kanyon, aynı zamanda Türkiye’nin en popüler rafting
+            parkurlarından biri. Çok zorlu bir rafting parkuruna sahip kanyonda profesyonellerle birlikte rafting
+            yaparak heyecan dolu bir gün yaşayabilirsiniz.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/perge-antik-kenti.jpeg" alt="" width="250"
+            style="float: right; margin-top: 5px ;margin-right:6px; margin-bottom:5px; margin-left: 5px;">
+        <br><br><br><br><br><br>
+        <h2 class="header2"> Perge Antik Kenti</h2>
+        <br>
+        <p class="paragraph">Antalya’ya en yakın antik kentlerden biri olan ve merkeze sadece 16 kilometre uzaklıkta
+            bulunan Perge Antik Kenti’nin Hitit döneminde inşa edildiği düşünülüyor. O dönemler Parha ismiyle bilinen
+            Perge, Roma döneminde de Anadolu’daki en gelişmiş şehirler biriydi. Etkileyici heykelleri ve düzenli
+            mimarisi ile ilgi çeken Perge, doğu-batı ve kuzey-güney yönlerinde planlanmış sütunlu caddeleri, M.S. 2.
+            yüzyılda inşa edilmiş 15.000 kişilik devasa antik tiyatrosu, anıtsal çeşmeleri, Roma’nın antik hamamlar ve
+            agoraları ile Antalya’nın en çok ziyaret edilen antik kentleri arasında.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/saklikent.jpg" alt="" width="250"
+            style="float: left; margin-top: 5px ;margin-right:6px; margin-bottom:5px;">
+        <br><br><br><br><br>
+        <h2 class="header2"> Saklıkent Kayak Merkezi </h2>
+        <br>
+        <p class="paragraph">Antalya; mavi bayraklı plajları, sıcak havası ve her zaman güneşli olması ile ünlü bir
+            şehir ama Antalya’da kış aylarında muhteşem deniz manzaraları eşliğinde kayak yapmanız da mümkün. Toros
+            Dağları'nın Beydağları bölümünde yer alan Saklıkent Kayak Merkezi, Akdeniz Bölgesi'ndeki en büyük ve en
+            popüler kayak merkezi konumunda. Dağın kuzey yamacında inşa edilen kayak otelleri ve dağ evleriyle kış
+            sezonunda çok hareketli olan Saklıkent Kayak Merkezi, aynı zamanda dünyanın ekvatora en yakın kayak merkezi
+            biri olmasıyla da ünlü.
+            <br><br>
+            Kar kalınlığının kış aylarında 100-200 cm, zirvede ise 4 metreyi bulduğu kayak merkezinde dünya
+            standartlarında 4 kilometrelik kayak, snowboard ve kızak pistleri, telesiyejlerle birlikte 900 metrelik bir
+            baby lift de hizmet veriyor. Şehir merkezinden toplu taşıma veya turlarla bir saat içinde rahatlıkla
+            ulaşabileceğiniz Saklıkent Kayak Merkezi’nde ilkbahar ve sonbahar aylarında doğa yürüyüşleri yapabilir; kış
+            aylarında ise her yaş grubu için kayak eğitimler alarak büyüleyici doğa manzaraları eşliğinde Antalya'da
+            kayak yapmanın tadını çıkarabilirsiniz.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/sapadere-kanyonu.jpg" alt="" width="250"
+            style="float: right; margin-top: 5px ;margin-right:6px; margin-bottom:5px; margin-left: 5px;">
+        <br><br><br><br><br>
+        <h2 class="header2"> Sapadere Kanyonu</h2>
+        <br>
+        <p class="paragraph">Doğal güzellikleriyle ünlü Antalya'nın başka bir tabiat harikası olan Sapadere Kanyonu, 400
+            metre yüksekliğindeki kaya duvarları arasından süzülen buz gibi suları ve zorlu yürüyüş parkurlarıyla
+            mutlaka keşfetmesi gereken bir yer. Ahşap yürüyüş yollarıyla sarılı kanyonda dar geçitler, mağaralar ve kaya
+            havuzları arasında gezdikten sonra onlarca endemik bitki türüyle süslü kır bahçelerinde bir mola
+            verebilirsiniz.
+            <br><br>
+            Seyir teraslarından panoramik fotoğraflarını çekebileceğiniz Sapadere Kanyonu’nun ilkbahar ve yaz aylarında
+            eriyen kar sularıyla beslenen balıkları tadabileceğiniz alabalık çiftliklerine de mutlaka uğramalısınız. Yaz
+            aylarında Sapadere Kanyonu’nu geziyorsanız, binlerce yılda oluşan kaya havuzlarının buz gibi kar sularında
+            yüzmeyi de unutmayın.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/selge-antik-kenti.jpg" alt="" width="250"
+            style="float: left; margin-top: 5px ;margin-right:6px; margin-bottom:5px;">
+        <br><br><br><br><br>
+        <h2 class="header2"> Selge Antik Kenti </h2>
+        <br>
+        <p class="paragraph">Köprülü Kanyon Milli Parkı'nın tam ortasında bulunan Selge Antik Kenti, dağ yamaçlarında
+            çarpıcı manzaralar oluşturuyor. Köprüçay Nehri’nde rafting yapan turistlerin mutlaka uğradığı antik kent,
+            iyi düzenlenmiş yürüyüş yollarıyla son yıllarda çok popüler bir gezi noktası haline geldi. Köprüçay Nehri
+            kıyısında kurulan ve çevresi akarsularla çevrili Selge Antik Kenti’ne ulaşım için Roma döneminde inşa edilen
+            köprüler, bugün hala ayakta ve muhteşem manzaralar sunuyorlar. Roma su kemerleri ve tarlaları sulamak için
+            geliştirilen teras sistemi de antik kentte mutlaka görmeniz gereken yerler arasında.
+            <br><br>
+            Döneminin en büyük ve güçlü kenti olan Selge’de M.S. 2. yüzyıla tarihlenen antik tiyatro, ozanların toplanma
+            alanı olan oditoryum, antik tapınaklar ve pazar yeri de görülmeye değer güzellikteki yerlerden. Selge
+            gezinizde antik tiyatronun en yüksek noktasından panoramik Köprülü Kanyon Milli Parkı fotoğrafları çekmeyi
+            de unutmayın.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/side-antik-kenti.jpeg" alt="" width="250"
+            style="float: right; margin-top: 5px ;margin-right:6px; margin-bottom:5px; margin-left: 5px;">
+        <br><br><br><br><br>
+        <h2 class="header2"> Side Antik Kenti </h2>
+        <br>
+        <p class="paragraph">Doğal güzellikleriyle ünlü Antalya'nın başka bir tabiat harikası olan Sapadere Kanyonu, 400
+            metre yüksekliğindeki kaya duvarları arasından süzülen buz gibi suları ve zorlu yürüyüş parkurlarıyla
+            mutlaka keşfetmesi gereken bir yer. Ahşap yürüyüş yollarıyla sarılı kanyonda dar geçitler, mağaralar ve kaya
+            havuzları arasında gezdikten sonra onlarca endemik bitki türüyle süslü kır bahçelerinde bir mola
+            verebilirsiniz.
+            <br><br>
+            Seyir teraslarından panoramik fotoğraflarını çekebileceğiniz Sapadere Kanyonu’nun ilkbahar ve yaz aylarında
+            eriyen kar sularıyla beslenen balıkları tadabileceğiniz alabalık çiftliklerine de mutlaka uğramalısınız. Yaz
+            aylarında Sapadere Kanyonu’nu geziyorsanız, binlerce yılda oluşan kaya havuzlarının buz gibi kar sularında
+            yüzmeyi de unutmayın.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/tazi-kanyonu.jpg" alt="" width="250"
+            style="float: left; margin-top: 5px ;margin-right:5px; margin-bottom:5px;">
+        <br><br><br><br><br>
+        <h2 class="header2"> Tazı Kanyonu </h2>
+        <br>
+        <p class="paragraph">Köprülü Kanyon Milli Parkı sınırları içerisinde yer alan başka bir etkileyici doğa harikası
+            da Tazı Kanyonu. Antalya merkezine 105 kilometre uzaklıkta yer alan kanyon, 200 ile 400 metre yükseklikteki
+            kanyon uçurumları ve yemyeşil manzarasıyla Antalya'nın mutlaka keşfetmesi gereken bir tabiat harikası.
+            <br><br>
+            Doğal etkenlerle milyonlarca yılda oluşan Tazı Kanyonu, antik çağlarda Bilgelik Vadisi olarak biliniyordu.
+            Köprülü Kanyon ve Selge Antik kenti ile birlikte keşfe çıkabileceğiniz kanyonu gezerken sarp kayalarda gezen
+            dağ keçileri, vaşaklar, tilkiler, geyikler, kaya kartalları gibi pek çok vahşi hayvanla karşılaşabilir ve
+            etkileyici doğa fotoğrafları çekebilirsiniz. Tazı Kanyonu, her mevsim sunduğu büyüleyici manzarasıyla
+            fotoğraf safarileri, trekking ve dağcılık için de Antalya’da en çok gidilen yerlerden biri. Göknar, kara çam
+            ve selvi ağaçları arasında çadırınızı kurup Tazı Kanyonu’nun temiz havası ve el değmemiş doğasında birkaç
+            gün de geçirebilirsiniz.
+            <br><br>
+            Dev Note: Hatta Benimde burada bir fotoğrafım var.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/termessos-antik-kenti.jpg" alt="" width="250"
+            style="float: right; margin-top: 5px ;margin-right:6px; margin-bottom:5px; margin-left: 5px;">
+        <br><br><br><br><br>
+        <h2 class="header2"> Termessos Antik Kenti </h2>
+        <br>
+        <p class="paragraph">Antalya’nın en iyi korunmuş antik kentlerinden birine ev sahipliği yapan Termessos,
+            Antalya'ya sadece 30 kilometre uzaklıkta Korkuteli yolu üzerinde bulunuyor. Deniz seviyesinden 1150 metre
+            yükseklikte, Güllük Dağı zirvelerinde kurulmuş Termessos Antik Kenti, dağ eteklerinde inşa edilmiş devasa
+            antik tiyatrosu ile dünya çapında bir üne kavuştu.
+            <br><br>
+            Anadolu'nun bilinen en eski halklarından olan Luvi ve Solym uygarlıkları tarafından inşa edildiği düşünülen
+            antik kent, doğa yürüyüşler için ideal olan Termessos Milli Parkı'nın içerisinde yer alıyor. Antalya tarih
+            ve kültür turları ile keşfe çıkabileceğiniz Termessos Milli Parkı ve Termessos Antik Kenti’nde Güney
+            Amerika’nın Maya ve İnka kentlerine benzer büyüleyici manzaralarla karşılaşacaksınız. Birçok arkeolojik kazı
+            çalışması yapılan antik kentte bulunan paha biçilmez tarihi eserler ise Antalya Müzesi'nde özel bir bölümde
+            sergileniyor.
+        </p>
+    </div>
+    <br><br>
+    <div style="float: left;">
+        <img src="/pictures/visit/Yivli_Minare_Mosque.jpg" alt="" width="250"
+            style="float: left; margin-top: 5px ;margin-right:5px; margin-bottom:5px;">
+        <br><br><br><br><br>
+        <h2 class="header2"> Yivli Minare </h2>
+        <br>
+        <p class="paragraph">Selçuklu Sultanı 1. Alaaddin Keykubat'ın Antalya’da yaptırdığı en önemli tarihi simgelerden
+            biri olan Yivli Minare, görkemli bir 13. yüzyıl Selçuklu dönemi eseri. Kesme taş, tuğla ve turkuaz renkli
+            çinilerle inşa edilen Yivli Minare, 38 metre yükseklikte ve 90 basamaklı bir merdivenle zirvesine
+            çıkılabiliyor. Antalya'nın ortasında, tarihi Kaleiçi'nin girişinde yer alan Yivli Minare, muhteşem Akdeniz
+            ve Kaleiçi manzarasından dolayı şehrin en çok fotoğraflanan yerlerinden biri. 1230 yılında inşa edilen
+            minarenin muhteşem çinilerini inceledikten sonra hemen yanındaki 6 kubbeli tarihi camiyi de ziyaret
+            edebilirsiniz.
+        </p>
+    </div>
+</body>
+<script>timerStart()</script>
+</html>

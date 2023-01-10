@@ -1,0 +1,139 @@
+.iconBox{
+    width: 175px;
+    height: auto;
+    border: 4px;
+}
+
+.sizedBox{
+    width: 87%;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    border:4px solid white
+}
+
+.baslik{
+    margin-left: 33%;
+    margin-top: 1%;
+    position: absolute;
+    font-size: 55px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.baslik1{
+    margin-left: 45%;
+    margin-top: 1%;
+    position: absolute;
+    font-size: 55px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.paragraph{
+    color: white;
+}
+
+.header2{
+    color: red;
+}
+
+button{
+    background-color:  #ff7675;
+    color:#2d3436;
+    padding:20px;
+    border:2px #d63031 solid;
+    font-size:1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hotelDivLeft{
+    background-color: white;
+    float: left;
+    width: 770px;
+    height: 325px;
+    padding: 1%;
+    border: 5px solid black;
+    margin: 2%;
+}
+.hotelDivRight{
+    background-color: white;
+    float: right;
+    width: 770px;
+    height: 325px;
+    padding: 1%;
+    border: 5px solid black;
+    margin: 2%;
+}
+.hotelParagraph{
+    color: black;
+}
+
+.foodsHeader{
+    color: #153b9d;
+}
+
+.foodsParagraph{
+    color: black;
+}
+
+.districtDivLeft{
+    background-color: white;
+    float: left;
+    width: 770px;
+    height: 400px;
+    padding: 1%;
+    border: 5px solid red;
+    margin: 2%;
+}
+
+.districtDivRight{
+    background-color: white;
+    float: right;
+    width: 770px;
+    height: 400px;
+    padding: 1%;
+    border: 5px solid red;
+    margin: 2%;
+}
+.districtDivCenter{
+    background-color: white;
+    float: left;
+    width: 770px;
+    height: 400px;
+    padding: 1%;
+    border: 5px solid red;
+    margin-left: 450px;
+}
+
+.foodsDivLeft{ 
+    background-color: white;
+    float: left;
+    width: 796px;
+    height: 350px;
+    padding: 1%;
+    border: 5px solid green;
+    margin-top: 2%;
+}
+.foodsDivRight{ 
+    background-color: white;
+    float: right;
+    width: 796px;
+    height: 350px;
+    padding: 1%;
+    border: 5px solid green;
+    margin-top: 2%;
+    margin-right: 3%;
+}
+.foodsDivCenter{
+    background-color: white;
+    float: left;
+    width: 796px;
+    height: 350px;
+    padding: 1%;
+    border: 5px solid red;
+    margin-left: 450px;
+    margin-top: 2%;
+}
+

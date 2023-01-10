@@ -1,0 +1,44 @@
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antalya'yı Ne Kadar Biliyorsun</title>
+    <link rel="stylesheet" href="/animations/menu.css">
+    <link rel="stylesheet" href="/animations/main_screen.css">
+    <link rel="stylesheet" href="/animations/place_to_visit.css">
+    <link rel="stylesheet" href="/animations/extensions.css">
+    <link rel="stylesheet" href="/animations/dark_mode_toggler.css">
+    <script src="/scripts/script.js"></script>
+</head>
+<body onload="onLoad()">
+    <header>
+        <div class="sizedBox">
+            <p class="baslik">Antalya'yı Ne Kadar Biliyorsun?</p>
+            <div class="iconBox"><img src="/pictures/main/1000_F_181236526_NtrvsyLAgnM6qPqvV79bLIxwZYBX75ML.jpg"
+                    width="175"></div>
+        </div>
+    </header>
+    <label class="label">
+        <div class="toggle">
+            <input onclick="darkMode()" class="toggle-state" type="checkbox" name="check" value="check" />
+            <div class="indicator"></div>
+        </div>
+    </label>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn">≡</label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="/main_page.html" onclick="timerStop()">Anasayfa</a></li>
+            <li><a href="/screens/history.html" onclick="timerStop()">Tarihçe</a></li>
+            <li><a href="/screens/place_to_visit.html" onclick="timerStop()">Tarihi ve Gezilecek Yerler</a></li>
+            <li><a href="/screens/accommodation.html" onclick="timerStop()">Konaklama Yerleri</a></li>
+            <li><a href="/screens/districts.html" onclick="timerStop()">İlçeler</a></li>
+            <li><a href="/screens/traditional_foods.html" onclick="timerStop()">Şehre Özgü Yiyecekler</a></li>
+            <li><a href="/screens/contact.html" onclick="timerStop()">İletişim</a></li>
+            <li><a href="/screens/test.html" onclick="timerStop()">Test</a></li>
+        </ul>
+    </div>
+    
+</body>
+<script>timerStart()</script>
+</html>

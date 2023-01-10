@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="/animations/main_screen.css">
+    <link rel="stylesheet" href="/animations/extensions.css">
+    <link rel="stylesheet" href="/animations/slideshow.css">
+    <link rel="stylesheet" href="/animations/dark_mode_toggler.css">
+    <script src="/scripts/script.js"></script>
+    <script>timerStart()</script>
+    <link rel="stylesheet" href="/animations/menu.css">
+
+</head>
+
+<body onload="onLoad()">
+    <header>
+        <div class="sizedBox">
+            <p class="baslik">Antalya'ya Hoşgeldiniz</p>
+            <div class="iconBox"><img src="/pictures/main/1000_F_181236526_NtrvsyLAgnM6qPqvV79bLIxwZYBX75ML.jpg"
+                    width="175"></div>
+        </div>
+    </header>
+
+    <label class="label">
+        <div class="toggle">
+            <input onclick="darkMode()" class="toggle-state" type="checkbox" name="check" value="check">
+            <div class="indicator"></div>
+        </div>
+    </label>
+    <br>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 9</div>
+            <img class="images" src="/pictures/main/23211.jpg" alt="">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 9</div>
+            <img class="images" src="/pictures/main/60505b40-c57b-4e31-8aa0-33d8b4e5ff13-istock-906410582.jpg" alt="">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 9</div>
+            <img class="images" src="/pictures/main/7-wonderful-things-to-do-in-Antalya-Turkey.jpg" alt="">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 9</div>
+            <img class="images" src="/pictures/main/antalya-1920.jpg" alt="">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 9</div>
+            <img class="images" src="/pictures/main/Antalya-Hotel-Resort---Spa-Genel-301553.jpg" alt="">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 9</div>
+            <img class="images" src="/pictures/main/antalya_lead.jpg" alt="">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 9</div>
+            <img class="images" src="/pictures/main/kapak-280.jpeg" alt="">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 9</div>
+            <img class="images" src="/pictures/main/UK_Antalya_Turkey_Header.jpg" alt="">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">9 / 9</div>
+            <img class="images" src="/pictures/main/unnamed.jpg" alt="">
+        </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn">≡</label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="/main_page.html" onclick="timerStop()">Anasayfa</a></li>
+            <li><a href="/screens/history.html" onclick="timerStop()">Tarihçe</a></li>
+            <li><a href="/screens/place_to_visit.html" onclick="timerStop()">Tarihi ve Gezilecek Yerler</a></li>
+            <li><a href="/screens/accommodation.html" onclick="timerStop()">Konaklama Yerleri</a></li>
+            <li><a href="/screens/districts.html" onclick="timerStop()">İlçeler</a></li>
+            <li><a href="/screens/traditional_foods.html" onclick="timerStop()">Şehre Özgü Yiyecekler</a></li>
+            <li><a href="/screens/contact.html" onclick="timerStop()">İletişim</a></li>
+            <li><a href="/screens/test.html" onclick="timerStop()">Test</a></li>
+        </ul>
+    </div>
+    <!-- <script>window.onunload(timerStop())</script> -->
+</body>
+
+<script src="/scripts/slider.js"></script>
+</html>

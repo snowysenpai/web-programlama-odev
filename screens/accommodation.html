@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Konaklama Yerleri</title>
+    <link rel="stylesheet" href="/animations/menu.css">
+    <link rel="stylesheet" href="/animations/main_screen.css">
+    <link rel="stylesheet" href="/animations/extensions.css">
+    <link rel="stylesheet" href="/animations/dark_mode_toggler.css">
+    <script src="/scripts/script.js"></script>
+</head>
+
+<body onload="onLoad()">
+    <header>
+        <div class="sizedBox">
+            <p class="baslik">Antalya'da Konaklama Yerleri</p>
+            <div class="iconBox"><img src="/pictures/main/1000_F_181236526_NtrvsyLAgnM6qPqvV79bLIxwZYBX75ML.jpg"
+                    width="175"></div>
+        </div>
+    </header>
+    <label class="label">
+        <div class="toggle">
+            <input onclick="darkMode()" class="toggle-state" type="checkbox" name="check" value="check" />
+            <div class="indicator"></div>
+        </div>
+    </label>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn">≡</label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="/main_page.html" onclick="timerStop()">Anasayfa</a></li>
+            <li><a href="/screens/history.html" onclick="timerStop()">Tarihçe</a></li>
+            <li><a href="/screens/place_to_visit.html" onclick="timerStop()">Tarihi ve Gezilecek Yerler</a></li>
+            <li><a href="/screens/accommodation.html" onclick="timerStop()">Konaklama Yerleri</a></li>
+            <li><a href="/screens/districts.html" onclick="timerStop()">İlçeler</a></li>
+            <li><a href="/screens/traditional_foods.html" onclick="timerStop()">Şehre Özgü Yiyecekler</a></li>
+            <li><a href="/screens/contact.html" onclick="timerStop()">İletişim</a></li>
+            <li><a href="/screens/test.html" onclick="timerStop()">Test</a></li>
+        </ul>
+    </div>
+
+    <div class="hotelDivLeft">
+        <img src="/pictures/accom/rixos-downtown-antalya.jpg" alt=""
+            style="width: 40%; float: left; padding-right: 5px;">
+        <h2 class="header2">Rixos Downtown Antalya</h2>
+        <p class="hotelParagraph">Konyaaltı Plajı'nın yakınındaki Atatürk Kültür Parkı'nda, egzotik bahçeler içinde yer
+            alan
+            bu 5 yıldızlı otel, deniz ve Toros Dağları manzaralıdır. Bünyesinde 2 restoran seçeneği ve lagün tarzında
+            bir havuz bulunan otel, Konyaaltı Plajına 300 metre mesafededir. Lüks Rixos Downtown'ın konukları, modern
+            spor salonu ve 2 tenis kortundan yararlanabilirler. Spa alanındaki Türk hamamında yorgunluk atabilir ya da
+            rahatlatıcı masaj uygulamalarının keyfini çıkarabilirler. Panoramik teraslı Rixos Lounge'un şık ortamında
+            dünya mutfaklarından seçkin lezzetler servis edilir. Konyaaltı Plajı'ndaki Beach Bar&Restaurant ise alakart
+            menüyle hizmet vermektedir. Otelde egzotik kokteyllerin ve hafif atıştırmalıkların tadını çıkarabileceğiniz
+            çeşitli barlar da mevcuttur. Gösterişli kumaşlarla dekore edilmiş aydınlık konuk odalarında Antalya veya
+            Akdeniz manzaralı özel balkon vardır.</p>
+    </div>
+    <div class="hotelDivRight">
+        <img src="/pictures/accom/luna-boutique-hotel.jpg" alt="" style="width: 60%; float: left; padding-right: 5px;">
+        <h2 class="header2">Luna Boutique Hotel</h2>
+        <p class="hotelParagraph"> Luna Boutique Hotel, Konyaaltı Plajı hedefine 3,6 km mesafede olmanızı sağlar. Bir
+            şeyler atıştırmak isteyen misafirler Amerika mutfağı sunan ve öğle yemeği ile akşam yemeği için açık olan
+            BEERZONE restoranını tercih edebilir. Bar/dinlenme salonu ve bahçe diğer öne çıkan özelliklerdir. Yardıma
+            hazır personel ve bar misafirlerden iyi puan alıyor.</p>
+    </div>
+    <br><br><br><br><br>
+    <div class="hotelDivLeft">
+        <img src="/pictures/accom/royal-lost-suite.jpg" alt=""
+            style="height: 250px; width: 350px; float: left; padding-right: 5px;">
+        <h2 class="header2"> Royal Loft Suite</h2>
+        <p class="hotelParagraph"> Royal Loft Suit, Antalya'nın incisi Konyaaltı Plajına 150 metre, Konyaaltı Kent
+            Meydanı, cafe ve restoranlara 300 metre mesafededir. Akvaryum'a 3,9 km, şehir merkezine 9 km ve hava alanına
+            19 km'dir. Daireler modern bir şekilde dekore edilmiş olup full eşyalı, klimalı ve ısınma doğal gaz ile
+            sağlanmaktadır. Keyifli bahçemizde misafirlerimiz havuzun tadını çıkarabilirler. Ayrıca barbekü imkanı da
+            bulunmaktadır.</p>
+    </div>
+    <div class="hotelDivRight">
+        <img src="/pictures/accom/cender-hotel.jpg" alt=""
+            style="height: 250px; width: 350px; float: left; padding-right: 5px;">
+        <h2 class="header2">Cender Hotel</h2>
+        <p class="hotelParagraph"> Antalya seyahatine çıkanlar için Cender Hotel harika bir seçim.
+            Cender Hotel'de kalan konuklar, Antalya'nın en ünlü gezilecek yerlerinden olan Hidirlik Kulesi'ne
+            ve Kesik Minare Camisi'ne uğrayabilir.
+            Ücretsiz wifi sayesinde konuklar internete bağlanabilir. Ayrıca Cender Hotel Antalya, klima ve mini bar gibi
+            oda olanakları da sunuyor.
+            Konaklamanız süresince 24 saat açık resepsiyon, oda servisi ve bagaj saklama gibi hizmetlerin keyfini
+            çıkarabilirsiniz. Cender Hotel konukları ayrıca işletmedeki havuz ve kahvaltı hizmetlerinden yararlanabilir.
+            Aracıyla gelen konuklar için ücretsiz otopark mevcut.
+            Hem yerlilerin hem de şehir dışından gelenlerin gözdesi Çin restoranı Macha Cafe & Restaurant, karnınız
+            acıktığında ziyaretinizi bekliyor.</p>
+    </div>
+    <div class="hotelDivLeft">
+        <img src="/pictures/accom/antalya-ogretmen-evi.jpeg" alt=""
+            style="height: 250px; width: 350px; float: left; padding-right: 5px;">
+        <h2 class="header2"> Antalya Öğretmenevi</h2>
+        <p class="hotelParagraph"> Antalya Öğretmenevi ve Akşam Sanat Okulu Müdürlüğümüz 17.04.1995 tarihinde hizmete
+            açılmıştır. Öğretmenevimiz uluslararası Antalya havalimanına 20 kilometre, şehirler arası otobüs terminaline
+            2 kilometre, dünyaca ünlü Konyaaltı Plajına 3 kilometre uzaklıktadır.
+            Antalya Öğretmenevimizde ayrıca; yemek bir kültürdür diyen tüm misafirlerimiz için hijyenik ve modern
+            mutfağında görevli usta aşçılarımız maharetleri ile üretilen Türk Mutfağından lezzetlerin sunulduğu 220
+            kişilik restaurant, 150 kişilik Teras restaurant, Projeksiyon, laptop bilgisayar, kablosuz internet, motorlu
+            otomatik perde sistemi gibi teknik donanımlı çok amaçlı 350 kişilik toplantı salonuna sahiptir.</p>
+    </div>
+    <div class="hotelDivRight">
+        <img src="/pictures/accom/meyde-boutique-suites.jpg" alt=""
+            style="height: 250px; width: 350px; float: left; padding-right: 5px;">
+        <h2 class="header2"> Meyde Boutique Suites</h2>
+        <p class="hotelParagraph"> Açık havuz gibi dinlenme imkânlarından/kolaylıklarından yararlanın veya bahçe ile
+            manzaranın tadını çıkartın. Bu Akdeniz stili dairede misafirlere ücretsiz kablosuz İnternet, danışma
+            (concierge) hizmetleri ve piknik alanı sunulmaktadır.Misafirler için kuru temizleme/çamaşır yıkama servisi,
+            24 saat açık resepsiyon ve birden fazla dil bilen personel mevcuttur. Gidiş-dönüş havaalanı transfer servisi
+            ücretlidir. Ayrıca ücretsiz otopark vardır.Misafirlerimizin konforu ve rahatı için 23 klimalı odada küçük
+            mutfak, buzdolabı ve set üstü ocak bulunmaktadır. Misafirlerimizin iyi vakit geçirebilmesi için LED
+            televizyon, uydu kanalları ve ücretsiz kablosuz İnternet vardır. Misafirlere emanet kasası ve masa gibi
+            imkânlar ve kolaylıklar sunulmaktadır. Ayrıca haftada bir oda/kat hizmeti verilmektedir.</p>
+    </div>
+</body>
+<script>timerStart()</script>
+</html>

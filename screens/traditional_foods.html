@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Yöresel Yemekler</title>
+    <link rel="stylesheet" href="/animations/menu.css">
+    <link rel="stylesheet" href="/animations/main_screen.css">
+    <link rel="stylesheet" href="/animations/extensions.css">
+    <link rel="stylesheet" href="/animations/dark_mode_toggler.css">
+    <script src="/scripts/script.js"></script>
+</head>
+
+<body onload="onLoad()">
+    <header>
+        <div class="sizedBox">
+            <p class="baslik">Antalya'ya Özgü Yiyecekler</p>
+            <div class="iconBox"><img src="/pictures/main/1000_F_181236526_NtrvsyLAgnM6qPqvV79bLIxwZYBX75ML.jpg"
+                    width="175"></div>
+        </div>
+    </header>
+    <label class="label">
+        <div class="toggle">
+            <input onclick="darkMode()" class="toggle-state" type="checkbox" name="check" value="check" />
+            <div class="indicator"></div>
+        </div>
+    </label>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn">≡</label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="/main_page.html" onclick="timerStop()">Anasayfa</a></li>
+            <li><a href="/screens/history.html" onclick="timerStop()">Tarihçe</a></li>
+            <li><a href="/screens/place_to_visit.html" onclick="timerStop()">Tarihi ve Gezilecek Yerler</a></li>
+            <li><a href="/screens/accommodation.html" onclick="timerStop()">Konaklama Yerleri</a></li>
+            <li><a href="/screens/districts.html" onclick="timerStop()">İlçeler</a></li>
+            <li><a href="/screens/traditional_foods.html" onclick="timerStop()">Şehre Özgü Yiyecekler</a></li>
+            <li><a href="/screens/contact.html" onclick="timerStop()">İletişim</a></li>
+            <li><a href="/screens/test.html" onclick="timerStop()">Test</a></li>
+        </ul>
+    </div>
+    <div class="foodsDivLeft">
+        <img src="/pictures/foods/arabasi-corbasi.jpeg" alt="" style="width: 41%; float: left; padding-right: 5px;" onmouseout="yoresel_urunleri_incele()">
+        <h2 class="foodsHeader">Arabaşı Çorbası</h2>
+        <p class="foodsParagraph">Antalya muftağı, coğrafi yakınlıkları nedeniyle Burdur, Isparta, Konya mutfağı ile
+            benzerlikler gösterir. Toroslar’ın arkasından sahile gelenler, doğaldir ki mutfak kültürlerini de
+            beraberlerinde getirmişlerdir. Bu yüzden Arabaşı çorbasının sahibi çoktur. Antalya mutfağında yaygın olarak
+            yapıldığı şekliyle beğeninize sunuyoruz.
+            <br><br>
+            Yemeğin tarifine aşağıdaki butona basarak ulaşabilirsiniz.
+        </p>
+        <button style="margin-top: 60px;"
+            onclick="window.location.href = 'http://www.fullantalya.com/geleneksel-antalya-mutfagindan-arabasi-corbasi/'">
+            Yemeğin Tarifi</button>
+
+    </div>
+    <div class="foodsDivRight">
+        <img src="/pictures/foods/antalya-piyazi.jpg" alt="" style="width: 41%; float: left; padding-right: 5px;" onmouseout="yoresel_urunleri_incele()">
+        <h2 class="foodsHeader">Antalya Piyazı</h2>
+        <p class="foodsParagraph">Antalya piyazı, tarator soslu bir fasulye yemeğidir. Başka yörelerde yapılan piyaz
+            çeşitleri salata olarak tüketilirken, Antalya ve ilçelerinde ana yemek olarak yenilmektedir. Antalya usulü
+            piyazın ayırt edici özelliği; tarator sosu kullanılmasından, üretim şeklinden, taratorun yapılışından
+            (tahin, limon suyu, sirke, tuz sarımsak, zeytinyağı, su.) ve kullanılan küçük taneli fasulyesinden ileri
+            gelmektedir. Antalya hakkında yazılmış eserlerde eskiden kullanılan Çandır fasulyesinin yemeğe özellik
+            kattığı belirtilmektedir.
+        </p>
+
+        <button style="margin-top: 41px;"
+            onclick="window.location.href = 'https://www.nefisyemektarifleri.com/tahinli-piyaz-antalya-usulu/'">
+            Yemeğin Tarifi</button>
+    </div>
+    <div class="foodsDivLeft">
+        <img src="/pictures/foods/gokcesu-pilavi.jpeg" alt="" style="width: 41%; float: left; padding-right: 5px;" onmouseout="yoresel_urunleri_incele()">
+        <h2 class="foodsHeader"> Gökçesu Pilavı</h2>
+        <p class="foodsParagraph"> Kendine has farklı ve eşsiz bir lezzeti olan Gökçesu pilavı, Antalya mutfağının
+            meşhur lezzetlerinden biri. Nohut, havuç, maydanoz ve ceviz içeriğiyle besin değeri yüksek olan Gökçesu
+            pilavı oldukça besleyici bir tarif.
+            <br><br>
+            <button style="margin-top: 15%;"
+                onclick="window.location.href = 'https://www.gzt.com/lokma/gokcesu-pilavi-26963'">
+                Yemeğin Tarifi</button>
+        </p>
+    </div>
+    <div class="foodsDivRight">
+        <img src="/pictures/foods/kabak-cicegi-dolmasi.jpeg" alt=""
+            style="width: 41%; float: left; padding-right: 5px;" onmouseout="yoresel_urunleri_incele()">
+        <h2 class="foodsHeader">Kabak Çiçeği Dolması</h2>
+        <p class="foodsParagraph">Kabak çiçeği dolması veya çiçek dolması, Türk, Yunan ve Kıbrıs mutfaklarında tüketilen
+            ve kabak çiçeklerinin doldurulması suretiyle hazırlanan bir dolma çeşidi. Türkiye'de Ege Bölgesi'nde,
+            Giritli mübadillerin getirdiği Girit mutfağının da bir unsuru olarak tüketilir. Kıbrıs'ta hem Kıbrıslı
+            Türkler hem de Kıbrıslı Rumlar tarafından yapılır, iki toplum arasında yapımında herhangi bir farklılık
+            yoktur. Rumlar tarafından kupepia me anthus adıyla bilinir. Kapanmaması için sabaha karşı gündoğumundan
+            hemen önce toplanan çiçekler kullanılır.
+        </p>
+        <button style="margin-top: 42px;"
+            onclick="window.location.href = 'https://lezzetler.com/kabak-cicegi-dolmasi-antalya-tarif-53580'">
+            Yemeğin Tarifi</button>
+    </div>
+    <div class="foodsDivLeft">
+        <img src="/pictures/foods/kabak-tatlisi.jpeg" alt="" style="width: 41%; float: left; padding-right: 5px;" onmouseout="yoresel_urunleri_incele()">
+        <h2 class="foodsHeader"> Kabak Tatlısı</h2>
+        <p class="foodsParagraph"> Kabaklar suyunu salacağı için ekstra su koymanıza gerek yok. Sabahtan beklettiğiniz
+            şekerli kabakları ocağa alıp yumuşayana kadar pişirin. Daha sonra borcama alıp soğuduktan sonra üzerine
+            tahin ve ceviz dökerek servis edin. Antalya'mızın meşhur tatlısıdır, tahinle lezzetine lezzet katar.
+        </p>
+        <button style="margin-top: 15%;"
+            onclick="window.location.href = 'https://www.nefisyemektarifleri.com/antalya-usulu-kabak-tatlisi/'">
+            Yemeğin Tarifi</button>
+    </div>
+    <div class="foodsDivRight">
+        <img src="/pictures/foods/kelle-paca-corbasi.jpeg" alt="" style="width: 41%; float: left; padding-right: 5px;" onmouseout="yoresel_urunleri_incele()">
+        <h2 class="foodsHeader"> Kelle Paça Çorbası</h2>
+        <p class="foodsParagraph"> Kış aylarının vazgeçilmezi haline gelen kelle paça çorbası, grip ve soğuk algınlığına
+            karşı vücut direncini arttırır. Aynı zamanda bağışıklığı da güçlendirir. Aynı zamanda Antalya usulü adıyla
+            farklı bir pişirme şekliylede tescillenmiş.
+        </p>
+        <button style="margin-top: 132px;"
+            onclick="window.location.href = 'https://www.turkascihaberleri.com/HaberDetay/78401/Antalya-Usulu-Kelle-Paca-Corbasi-Tescillendi----.html'">
+            Yemeğin Tarifi</button>
+    </div>
+    <div class="foodsDivLeft">
+        <img src="/pictures/foods/portakal-receli.jpeg" alt="" style="width: 41%; float: left; padding-right: 5px;" onmouseout="yoresel_urunleri_incele()">
+        <h2 class="foodsHeader"> Portakal Reçeli </h2>
+        <p class="foodsParagraph"> Ana vatanı Asya olan portakal, ülkemizde en çok Antalya'da yetiştirilir. Genellikle
+            tatlıların içerisinde yer verilen bu meyve, ilaç sektöründe de kullanılır. C vitamini bakımından zengin
+            olduğu için; enerji verici ve vücut direncini arttırıcı özellikleri mevcuttur. Tümör riskini düşürmesinin
+            yanı sıra kemik hastalıklarına da iyi gelir. Özellikle kış aylarında iki günde bir tüketilmesi önerilir.
+            Malzemeleriniz hazırsa, portakal reçeli tarifine başlayabiliriz.
+        </p>
+        <button style="margin-top: 8%;"
+            onclick="window.location.href = 'https://www.lezzet.com.tr/yemek-tarifleri/tatli-tarifleri/serbetli-tatlilar/portakal-receli-551998'">
+            Yemeğin Tarifi</button>
+    </div>
+    <div class="foodsDivRight">
+        <img src="/pictures/foods/sedik-asi.jpeg" alt="" style="width: 41%; float: left; padding-right: 5px;" onmouseout="yoresel_urunleri_incele()">
+        <h2 class="foodsHeader"> Sedik Aşı </h2>
+        <p class="foodsParagraph">Yapımı oldukça zahmetsiz olan Sedik Aşı için, küp küp doğranan soğanlar, sıvı yağda
+            kavruluyor. Domates, biber, bulgur ve baharatlar eklenerek, tavuk suyu ile pişiriliyor. Ocaktan alındıktan
+            sonra çorbaya, kuru nane ilave ediliyor. Kaselere koyulan çorba, üzerine serpilen kırmızı pul biber ile
+            servis ediliyor.
+        </p>
+        <button style="margin-top: 96px;"
+            onclick="window.location.href = 'https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/sedik-asi'">
+            Yemeğin Tarifi</button>
+    </div>
+    <div class="foodsDivCenter">
+        <img src="/pictures/foods/taratorlu-tekir-tava.jpeg" alt=""style="width: 41%; float: left; padding-right: 5px;" onmouseout="yoresel_urunleri_incele()">
+        <h2 class="foodsHeader">Taratorlu Tekir tava</h2>
+        <p class="foodsParagraph">Vücudu pembe veya kırmızımsı renkte olan tekir balığı, kış aylarının sonlarına doğru
+            lezzetlenir. Genellikle boyu 15-25 cm aralığındadır. Ağırlığı ise 50-80 gram arasında değişiklik gösterir.
+            Ülkemizde en çok Ege ve Akdeniz'de görülür. İçeriğinde bulunan kalsiyum sayesinde kemik gelişimini
+            destekler. Kalp krizi riskini en aza düşürür.
+        </p>
+        <button style="margin-top: 96px;"
+        onclick="window.location.href = 'https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/sedik-asi'">
+        Yemeğin Tarifi</button>
+    </div>
+</body>
+<script>timerStart()</script>
+</html>
