@@ -45,7 +45,7 @@ function timerStart() {
             pageLoadHrs++
             pageLoadMin = 0
         }
-        console.log(`${pageLoadHrs}:${pageLoadMin}:${pageLoadSec}`)
+        // console.log(`${pageLoadHrs}:${pageLoadMin}:${pageLoadSec}`)
     }, 1000);
 }
 
@@ -54,14 +54,19 @@ function timerStop() {
 }
 
 
-function yoresel_urunleri_incele() {
-    sayac1++;
+function yoreselUrunleriIncele() {
+    var fotolar = document.querySelectorAll("img")
 
-    if (sayac1 >= 8) {
-        alert("Tüm ürünleri incelediniz 🙂")
-        sayac1 = null
+    for (var i = 0;i<fotolar.length; i++){
+        fotolar[i].addEventListener("mouseover", () => {
+            sayac1++
+            console.log(sayac1)
+            if (sayac1 >= 9) {
+                alert("Tüm ürünleri incelediniz 🙂")
+                sayac1 = null
+            }
+        })
     }
-    console.log(sayac1)
 }
 
 function iletisim() {

@@ -1,0 +1,15 @@
+Seçmeli Bileşenler:
+
+Yöresel ürünler/yemekler sayfasındaki yöresel ürün/yemek görüntülerinin tamamının üzerine fare 
+ile geçtikten sonra ekrana ‘tüm ürünleri incelediniz ’ şeklinde yazı yazan bir pop-up oluşturun.
+
+Kullanıcının her sayfada bulunduğu süre tutulsun. Kullanıcı başka sayfaya geçmek istediği zaman
+sayfa kapanmadan önce bu süre ekrana pop-up aracılığıyla yazdırılsın
+
+Iletişim sayfası oluşturun. Sayfada kullanıcı adı, soyadı, adres ve e-posta bilgisi ve yazmak istediği 
+mesajı girebilmelidir. Gönder tuşuna basıldığında kullanıcının yazdığı tüm bilgiler düzenli bir 
+şekilde pop-up aracılığı ile ekrana yazdırılsın.
+
+not: hocam tek bir hata var sanirim oda yoresel urunler kisminda. Bide ek olarak ben bunu github'da yukledim. eger bakmak isterseniz oradan da bakabilirsiniz 
+
+https://github.com/snowysenpai/web-programlama-odev
